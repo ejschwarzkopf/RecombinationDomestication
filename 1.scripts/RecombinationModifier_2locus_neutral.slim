@@ -62,12 +62,19 @@ initialize() {
 	target.addNewDrawnMutation(m2, GENOME_SIZE);
 	// sample genomes to receive first beneficial mutation
 	target2 = sample(p1.genomes, asInteger(M_FREQ*N*2));
+	// sample a position in the genome
+	position2 = sample(0:GENOME_SIZE, 1);
 	// place beneficial mutation
-	target2.addNewDrawnMutation(m3, sample(0:GENOME_SIZE, 1));
+	target2.addNewDrawnMutation(m3, position2);
 	// sample genomes to receive second beneficial mutation
 	target3 = sample(p1.genomes, asInteger(M_FREQ*N*2));
+	// sample a position in the genome
+	position3 = sample(0:GENOME_SIZE, 1);
 	// place beneficial mutation
-	target3.addNewDrawnMutation(m3, sample(0:GENOME_SIZE, 1));
+	target3.addNewDrawnMutation(m3, position3);
+	// print the positions
+	print(position2);
+	print(position3);
 }
 
 recombination() {	
