@@ -50,7 +50,7 @@ initialize() {
 }
 
 // create a population of 500 individuals
-1 {
+1 early() {
 	sim.addSubpop("p1", N);
 }
 
@@ -67,7 +67,7 @@ initialize() {
 	// place beneficial mutation
 	target2.addNewDrawnMutation(m3, position2);
 	// sample genomes to receive second beneficial mutation
-	target3 = sample(p1.genomes, asInteger(M_FREQ*N*2));
+	target3 = p1.genomes[which(match(p1.genomes, target2)!=-1)];
 	// sample a position in the genome
 	position3 = sample(0:GENOME_SIZE, 1);
 	// place beneficial mutation
@@ -100,7 +100,7 @@ recombination() {
 	print(sim.mutationFrequencies(p1, sim.mutationsOfType(m2)));
 }
 
-100020 late() { 
+1020 late() { 
 	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
 	print(sim.mutationFrequencies(p1, sim.mutationsOfType(m2)));
 }
