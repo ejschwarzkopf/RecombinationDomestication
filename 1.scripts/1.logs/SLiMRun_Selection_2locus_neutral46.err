@@ -1,7 +1,0 @@
-mkdir: cannot create directory '/home4/eschwar3/SLiMSelectionRecombination/2.output/Selection_2locus_neutral_highLD_Epistasis': File exists
-ERROR (SLiMEidosScript::Parse_SLiMEidosBlock): unexpected identifier @mutationEffect; expected a callback declaration (initialize, first, early, late, fitness, interaction, mateChoice, modifyChild, recombination, mutation, survival, or reproduction) or a function declaration.
-
-Error on script line 152, character 0:
-
-mutationEffect(m4) {
-^^^^^^^^^^^^^^
