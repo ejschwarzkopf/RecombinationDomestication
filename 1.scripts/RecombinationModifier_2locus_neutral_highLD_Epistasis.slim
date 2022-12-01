@@ -40,7 +40,7 @@ initialize() {
 
 
 	// g1 genomic element type: uses m1 for all mutations
-	initializeGenomicElementType("g1", c(m1, m4), c(1,0));
+	initializeGenomicElementType("g1", c(m1, m3, m4), c(1,0,0));
 	initializeGenomicElementType("g2", c(m1, m2), c(1,0));
 	
 	// uniform chromosome of length 100 kb with uniform recombination
@@ -147,13 +147,63 @@ recombination() {
 	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
 }
 
+100110 late() { 
+	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
+	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
+}
+
+100120 late() { 
+	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
+	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
+}
+
+100130 late() { 
+	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
+	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
+}
+
+100140 late() { 
+	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
+	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
+}
+
+100150 late() { 
+	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
+	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
+}
+
+100160 late() { 
+	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
+	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
+}
+
+100170 late() { 
+	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
+	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
+}
+
+100180 late() { 
+	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
+	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
+}
+
+100190 late() { 
+	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
+	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
+}
+
+100200 late() { 
+	// THIS IS WHERE I OUPTUT THE MODIFIER FREQUENCY -- REPEAT IT AT 100000+20,30,40,50
+	print(sim.mutationFrequencies(p1, c(sim.mutationsOfType(m2), sim.mutationsOfType(m3), sim.mutationsOfType(m4))));
+}
+
 // EPISTASIS CALL
 
-fitness(m4) {
+mutationEffect(m4) {
 	if (individual.genome1.countOfMutationsOfType(m3))
 	return 1.1;
 	else if (individual.genome2.countOfMutationsOfType(m3))
 	return 1.1;
 	else
-	return 1.01;
+	return effect;
 }
