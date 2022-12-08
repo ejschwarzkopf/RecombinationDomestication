@@ -1,16 +1,21 @@
-// Initial random seed:
 238
-
-// RunInitializeCallbacks():
-initializeMutationRate(1e-07);
-initializeMutationType(1, 0.5, "f", 0);
-initializeMutationType(2, 0.5, "f", 0);
-initializeGenomicElementType(1, m1, 1);
-initializeGenomicElementType(2, c(m1, m2), c(1, 0));
-initializeGenomicElement(g1, 0, 99999);
-initializeGenomicElement(g2, 100000, 100000);
-initializeRecombinationRate(c(1e-05, 0.5), c(99999, 100000));
-
-// Starting run at generation <start>:
-1 
-
+0.4961
+0.49655
+0.48915
+0.4938
+0.4904
+0.50115
+0.4899
+0.4961
+0.48505
+0.48565
+0.4811
+0.492
+0.4849
+0.4903
+0.49415
+0.4978
+0.50345
+0.47965
+0.4681
+0.4627
