@@ -76,7 +76,7 @@ initialize() {
 		cat("No contender of sufficient frequency found.\n");
 	}
 	print(c(0, target2.position));
-	print(sim.mutationFrequencies(p1, target2));
+	print(c(sim.mutationFrequencies(p1, sim.mutationsOfType(m2)), sim.mutationFrequencies(p1, target2)));
 	// sample a position in the genome
 	//position2 = sample(0:GENOME_SIZE, 1);
 	// place beneficial mutation
